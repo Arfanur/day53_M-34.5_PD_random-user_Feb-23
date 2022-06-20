@@ -1,4 +1,4 @@
-const loadComments = async () => {
+const autoloadComments = async () => {
     const url = 'https://jsonplaceholder.typicode.com/comments';
     // fetch(url)
     //     .then(res => res.json())
@@ -6,11 +6,12 @@ const loadComments = async () => {
 
     const res = await fetch(url);
     const data = await res.json();
-    displayComments(data);
+    DisplayComments2(data);
 };
+autoloadComments();
 
-const displayComments = (comments) => {
-    const commentsDiv = document.getElementById('comments');
+const DisplayComments2 = (comments) => {
+    const commentsDiv = document.getElementById('autoLoadComments');
     // for(const comment of comments){
     //     console.log(comment);
     // }
