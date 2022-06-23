@@ -15,12 +15,18 @@
     <h1 class="text-center">JsonPlaceHolder Comments</h1>
 
     <!-- comments trigger button -->
-    <div class="d-grid gap-2 col-2 mx-auto">
+    <div class="d-grid gap-2 col-2 mx-auto position-fixed">
         <button onclick="loadComments()" class="btn btn-outline-primary" type="button">Load Comments</button>
     </div>
 
+    <!-- single comment div -->
+    <div class="d-grid col-6 mx-auto my-3 text-center">
+        <div id="single-comment">
+        </div>
+    </div>
+    
     <!-- comments div -->
-    <div class="d-grid col-10 mx-auto my-3 text-center">
+    <div class="d-grid col-4 mx-auto my-3 text-center">
         <div id="comments">
         </div>
     </div>
